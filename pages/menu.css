@@ -1,0 +1,116 @@
+
+body {
+    margin: 0;
+    font-family: 'Lobster', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lobster', serif;
+}
+
+.navigation-wrapper {
+    height: 350px;
+    background-color: #d30080;
+    border-bottom: 20px solid white;
+    color: #ffffff;
+    display: flex;
+    padding:  0px 130px;
+    justify-content: space-between;
+}
+
+.left-column {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    height: 310px;
+    background-color:  #274ce0;
+    color: white;
+    padding: 20px 10px;
+}
+
+.center-column {
+   display: grid;
+   align-self: stretch;
+   align-items: center;
+   width: 700px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color:  #274ce0;
+}
+
+.center-column .logo {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+
+.right-column {
+   display: grid;
+   grid-template-columns:  auto auto auto;
+   justify-content: space-between;
+   justify-content: center;
+   background-color: #274ce0;
+   color: white;
+}
+
+.logo img {
+   width: 275px;
+   height: 100%;
+}
+
+.center-column {
+   display: grid;
+   align-self: stretch;
+   align-items: center;
+   width: 700px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color:  #274ce0;
+}
+
+.center-column .logo {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+
+.right-column {
+   display: grid;
+   grid-template-columns:  auto auto auto;
+   justify-content: space-between;
+   justify-content: center;
+   background-color: #274ce0;
+   color: white;
+}
+
+.menuhomepage {
+    display: grid;
+    background-image: url(../assets/Macrons.jpg);
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.menu-wrapper {
+}
+
+
+
+.menufood-center {
+
+}
+
+.menuprice-center {
+
+}
+
