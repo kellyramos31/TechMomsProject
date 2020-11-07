@@ -6,18 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap">
     <link rel="stylesheet" href="contact.css">
-
 </head>
 
 <body>
-    <h1>Contact</h1>
+    <div class="navigation-wrapper">
 
-    <!-- MAP -->
-    <div>
+        <!-- LEFT COLUMN-->
+        <div class="left-column">
+            <div>
+
+                <br>
+                <div>12345 Main Street</div>
+                <div>Park City, UT 84060</div>
+                <div>(801) 555-5555</div>
+                <br>
+                <div>Need macarons</div>
+                <div>to go?</div>
+                <div>We've got</div>
+                <div>you covered!</div>
+                <br>
+                <div>Text us at </div>
+                <div>801-BON-JOUR</div>
+                <div>to start your order!</div>
+                <br>
+
+            </div>
+        </div>
+
+        <!-- CENTER COLUMN-->
+
+        <div class="center-column">
+            <!-- LOGO-->
+            <div class="logo">
+                <img src="../assets/ProjectLogo.jpg" alt="logo">
+            </div>
+            <h1>La Petite Pâtisserie de Paris</h1>
+
+        </div>
+
+        <!-- LINKS-->
+
+        <!-- RIGHT COLUMN-->
+        <div class="right-column">
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="../index.html">Home</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="../pages/menu.html">Menu</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="../pages/contact.html">Reservations</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="../pages/contact.html">Contact</a>
+                </div>
+                <div class="nav-link">
+                    <a href="../pages/about.html">About</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="column-wrapper">
+
+        <div>
+            <div class="contact-header">
+                <p>CONTACT INFORMATION</p>
+            </div>
+            <div class="contact">
+                <p>Phone: &nbsp 801-555-5555</p>
+                <p>Text: &nbsp 801-BON-JOUR</p>
+                <p>email: &nbsp info@franceinutah.com</p>
+            </div>
+            <div class="map-title">
+                <p>Click the Map for Directions to La Petite Pâtisserie de Paris:</p>
+            </div>
+
+
+
+            <div class="map-pc">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.907917412239!2d-111.50594218473448!3d40.65396017933819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752729e15067a0b%3A0x6b30ff4f2886e1a9!2sCity%20Park!5e0!3m2!1sen!2sus!4v1604684904349!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+        </div>
+
+
+        <form>
+            <h1>Make Reservations</h1>
+            <div class="fill-out">
+                <p>Please fill out the form below to ensure a table outside on our patio!</p>
+            </div>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="email">e-mail:</label><br>
+            <input type="email" id="email" name="email">
+            <input type="checkbox" id="emailme" name="emailme" value="mail">
+            <label for="emailme">Add me to your e-mail list</label><br>
+            <label for="resv-date">Reserve the Date:</label><br>
+            <input type="date" id="resv-date" name="resv-date"><br>
+            <label for="tabletime">Select a Time:</label><br>
+            <input type="time" id="tabletime" name="tabletime" min="07:00" max="14:00" required>
+            <medium>Patio Hours: 7:00am to 2:00pm</medium><br>
+            <label for="partysize"># in Party:</label>
+            <select id="party" name="# in Party">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="fiveplus">Please call for parties of more than 5</option>
+            </select><br>
+            <textarea>Comments/Special Requests Here...</textarea>
+        </form>
 
     </div>
+
+    <div>
+        <div class="footer">
+            <div class="social">
+                <p>Let's Get Social!</p>
+                <div>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> Copyright 2020. La Petite Pâtisserie de Paris </p>
+            </div>
+
+            <div class="locations">
+                <div>
+                    <p>LOCATIONS*</p>
+                    <div>12345 Main Street</div>
+                    <div>Park City, UT 84060</div>
+                    <div>(801) 555-5555</div>
+                    <p>*Coming Soon to St. George, UT</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
 
 </body>
 

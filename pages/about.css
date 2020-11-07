@@ -1,0 +1,136 @@
+
+body {
+    margin: 0;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', serif;
+}
+
+.navigation-wrapper {
+    height: 320px;
+    background-color: #d30080;
+    border-bottom: 15px solid white;
+    color: #ffffff;
+    display: flex;
+    padding:  0px 130px;
+    justify-content: space-between;
+}
+
+.left-column {
+    display: grid;
+    font-family: Lato;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    height: 220px;
+    background-color:  #0504aa;
+    color: white;
+    padding: 50px 10px;
+}
+
+.center-column {
+   display: grid;
+   align-self: stretch;
+   align-items: center;
+   width: 700px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color:   #0504aa;
+}
+
+.center-column .logo {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+
+.right-column {
+   display: grid;
+   grid-template-columns:  auto auto auto;
+   justify-content: space-between;
+   justify-content: center;
+   background-color:  #0504aa;
+   color: white;
+}
+
+.logo img {
+   width: 225px;
+   height: 100%;
+}
+
+
+.links-wrapper {
+    display: grid;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    width: 150px;
+    text-align: center;
+}
+
+.nav-link a {
+   font-family: 'Lato', sans-serif;
+   font-size: 17px;
+   color:white;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.nav-link a:hover {
+   color:  #d30080;
+   letter-spacing: 2px; 
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #0504aa;
+    height:  215px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+
+
+.social {
+    display: grid;
+    grid-column-start: 1;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 40px;
+    color: white;
+}
+.copyright {
+    grid-column-start: 2;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 125px;
+    font-size: 14px;
+    color: white;
+}
+
+.locations {
+    display: grid;
+    grid-column-start: 3;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-right: 40px;
+    color: white;
+}

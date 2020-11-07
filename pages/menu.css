@@ -1,17 +1,17 @@
 
 body {
     margin: 0;
-    font-family: 'Lobster', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lobster', serif;
+h1 {
+    font-family: 'Dancing Script', serif;
 }
 
 .navigation-wrapper {
-    height: 350px;
+    height: 320px;
     background-color: #d30080;
-    border-bottom: 20px solid white;
+    border-bottom: 15px solid white;
     color: #ffffff;
     display: flex;
     padding:  0px 130px;
@@ -20,14 +20,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .left-column {
     display: grid;
+    font-family: Lato;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     justify-content: center;
     text-align: center;
-    height: 310px;
-    background-color:  #274ce0;
+    height: 220px;
+    background-color:  #0504aa;
     color: white;
-    padding: 20px 10px;
+    padding: 50px 10px;
 }
 
 .center-column {
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
    justify-content: center;
    align-items: center;
    text-align: center;
-   background-color:  #274ce0;
+   background-color:   #0504aa;
 }
 
 .center-column .logo {
@@ -52,65 +53,155 @@ h1, h2, h3, h4, h5, h6 {
    grid-template-columns:  auto auto auto;
    justify-content: space-between;
    justify-content: center;
-   background-color: #274ce0;
+   background-color:  #0504aa;
    color: white;
 }
 
 .logo img {
-   width: 275px;
+   width: 225px;
    height: 100%;
 }
 
-.center-column {
-   display: grid;
-   align-self: stretch;
-   align-items: center;
-   width: 700px;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   background-color:  #274ce0;
-}
 
-.center-column .logo {
-   display: flex;
-   justify-content: center;
-   align-self: center;
-}
-
-.right-column {
-   display: grid;
-   grid-template-columns:  auto auto auto;
-   justify-content: space-between;
-   justify-content: center;
-   background-color: #274ce0;
-   color: white;
-}
-
-.menuhomepage {
+.links-wrapper {
     display: grid;
-    background-image: url(../assets/Macrons.jpg);
-    height: 700px;
-    background-attachment: fixed;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    width: 150px;
+    text-align: center;
+}
+
+.nav-link a {
+   font-family: 'Lato', sans-serif;
+   font-size: 17px;
+   color:white;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.nav-link a:hover {
+   color:  #d30080;
+   letter-spacing: 2px; 
+}
+
+.menu-homepage {
+    display: grid;
+    background-image: url(../assets/macrons-2.jpg);
+    height: 1400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 20px solid white;
 }
-
-
-
-
 
 .menu-wrapper {
+   display: grid;
+   grid-column-start: 2;
+   table-layout: fixed;
+   width: 100%;
+   align-self: center;
+   align-items: left;
+   width: 820px;
+   justify-content: center;
+   text-align: left;
+   background-color: lavenderblush;
+   height: 1250px;
+   padding-top: 0px;
+   box-shadow: inset 0px -10px 55px -8px rgba(0,0,0,0.58);
+}
+.menu-title {
+   text-align: center;
+   font-family: 'Dancing Script', sans-serif;
+   color: #0504aa;
+   font-size: 32px;
+   padding-top: 65px;
+   justify-content: bottom;
+}
+
+.rest-menu {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 28px;
+    color: #0504aa;
+    padding-top: 5px;
+
+}
+.small-logo img{
+    width: 160px;
+    height: 100%;
+    padding-top: 5px;
+}
+    
+
+th, td {
+  padding: 5px 25px 1px 65px;
+  text-align: left;
+  font-size: 16px;
+  }
+
+table {
+  background-size: 900px 1100px;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  border-style: double;
+  border: 10px solid #d30080;
+  outline: 12px solid #0504aa;
+  vertical-align: middle;
+}
+
+.footer {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #0504aa;
+    height:  215px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.social {
+    display: grid;
+    grid-column-start: 1;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 40px;
+    color: white;
+}
+
+.copyright {
+    grid-column-start: 2;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 125px;
+    font-size: 14px;
+    color: white;
+}
+
+.locations {
+    display: grid;
+    grid-column-start: 3;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-right: 40px;
+    color: white;
 }
 
 
 
-.menufood-center {
-
-}
-
-.menuprice-center {
-
-}
 
