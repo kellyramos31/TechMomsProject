@@ -6,15 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>And More!</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-    <link rel="stylesheet" href="more.css">
 
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap">
+    <link rel="stylesheet" href="more.css">
 </head>
 
 <body>
-    <h1>Authentic French treats!</h1>
-    <h1>Custom Desserts!</h1>
-    <h1>Virtual Mommy and Me Baking Classes!</h1>
+    <div class="navigation-wrapper">
+
+        <!-- LEFT COLUMN-->
+        <div class="left-column">
+            <div>
+
+                <br>
+                <div>12345 Main Street</div>
+                <div>Park City, UT 84060</div>
+                <div>(801) 555-5555</div>
+                <br>
+
+            </div>
+        </div>
+
+        <!-- CENTER COLUMN-->
+
+        <div class="center-column">
+            <!-- LOGO-->
+            <div class="logo">
+                <img src="../assets/ProjectLogo.jpg" alt="logo">
+            </div>
+            <h1>La Petite Pâtisserie de Paris</h1>
+
+        </div>
+
+        <!-- LINKS-->
+
+        <!-- RIGHT COLUMN-->
+        <div class="right-column">
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="../index.html">Home</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="../pages/menu.html">Menu</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="../pages/contact.html">Reservations</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="../pages/contact.html">Contact</a>
+                </div>
+                <div class="nav-link">
+                    <a href="../pages/about.html">About</a>
+                </div>
+                <div class="nav-link">
+                    <a href="../pages/more.html">And More!</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="feature-homepage">
+
+        <div class="did-know">
+            <p>DID YOU KNOW...</p>
+        </div>
+
+        <div class="highlights">
+            <ul>
+                <li>Our Virtual Mommy & Me Baking Class Schedule is Now Available.</li>
+                <br>
+                <li>We Can Make Custom Desserts for Your Special Occasion or Just Because.</li>
+                <br>
+                <li>We are Featuring a Special Hot Cocoa Flavor Each Week in December.</li>
+                <br>
+                <li>Our Recipes are Authentically French! You Can Taste the Difference,</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <h2 class="w3-center">Automatic Slideshow</h2>
+
+    <div
+        style="background-color:  #0504aa; border-top: 15px solid #d30080; border-bottom: 15px solid #d30080; padding-top: 40px; padding-bottom: 40px">
+
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="../assets/MommyandMe.jpg" style="width:100%">
+            <img class="mySlides" src="../assets/CustomOrders.jpg" style="width:100%">
+            <img class="mySlides" src="../assets/AuthenticFrDessrt.jpg" style="width:100%">
+            <img class="mySlides" src="../assets/HotCocoaSlide.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every x# seconds
+        }
+    </script>
+
+
+
+
+
+    <div class="footer">
+        <div class="social">
+            <p>Let's Get Social!</p>
+            <div>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> Copyright 2020. La Petite Pâtisserie de Paris </p>
+        </div>
+
+        <div class="locations">
+            <div>
+                <p>LOCATIONS*</p>
+                <div>12345 Main Street</div>
+                <div>Park City, UT 84060</div>
+                <div>(801) 555-5555</div>
+                <p>*Coming Soon to St. George, UT</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
 
 </body>
 
